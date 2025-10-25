@@ -11,7 +11,8 @@
         }
     </style>
 </head> 
-<body class="bg-white px-4 sm:px-6 md:px-10">
+<body class="bg-white px-4 sm:px-6 md:px-10 leading-tight">
+    <!--Nav-->
     <header>
 <!--Nav Bar-->        
     <nav class="px-4 sm:px-6 md:px-10 py-4 flex flex-wrap items-center justify-between gap-4">
@@ -22,10 +23,10 @@
         </div>
 
         <div class="flex flex-wrap items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 text-sm sm:text-base">
-            <a href="#" class="text-black-900 hover:text-blue-600">Courses</a>
-            <a href="#" class="text-black-900 hover:text-blue-600">About</a>
-            <a href="#" class="text-black-900 hover:text-blue-600">FAQ</a>
-            <a href="#" class="text-black-900 hover:text-blue-600">Contact</a>
+            <a href="#Courses" class="text-black-900">Courses</a>
+            <a href="#" class="text-black-900">About</a>
+            <a href="#" class="text-black-900">FAQ</a>
+            <a href="#" class="text-black-900">Contact</a>
             <a href="#" class="flex items-center justify-center gap-1 border-2 border-[#00418B] text-[#00418B] px-4 py-2 rounded-md transition">Log In</a>
             <a href="#" class="bg-[#00418B] text-white font-semibold px-4 py-2 rounded-md flex items-center space-x-1">Sign Up</a>
         </div>
@@ -34,6 +35,7 @@
     </nav>
     </header>
 
+    <!--Section 1-->
     <section class="pt-16 pb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
     <!-- Text Section -->
@@ -73,7 +75,7 @@
 <!-- Features Grid -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
     <!-- Feature 1 -->
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center">
                     <img src="Images/tarbrd1.1.png" alt="Feature 1" class="h-6 w-6">
                     </div>
@@ -81,7 +83,7 @@
                 </div>
 
         <!-- Feature 2 -->
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center">
                     <img src="Images/chrt1.2.png" alt="Feature 2" class="h-6 w-6">
                     </div>
@@ -89,7 +91,7 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="flex flex-col items-center">
+                <div class="flex items-center space-x-2">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center">
                     <img src="Images/cap1.3.png" alt="Feature 3" class="h-6 w-6">
                     </div>
@@ -97,7 +99,7 @@
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="flex flex-col items-center">
+                <div class="flex items-center space-x-2">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center">
                     <img src="Images/cup1.4.png" alt="Feature 4" class="h-6 w-6">
                     </div>
@@ -106,6 +108,128 @@
             </div>    
         </div>
     </section>
+
+
+
+<!--Featured Courses-->
+    <section id="Courses" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+    <!-- Text Section -->
+            <div class="text-left space-y-6">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-black-900">
+                    Featured <span class="text-[#00418B]">Courses</span>
+                </h1>
+                <p class="text-[#878787] text-lg font-medium">
+                    Explore our most viewed courses on SkillHatch
+                </p>
+            </div> 
+
+    <!-- Courses Section -->  
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
+        <!-- Course 1 -->
+                <div class="w-full max-w-sm mx-auto">
+    <!-- Image -->
+                    <img src="Images/crs2.1.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                <!-- Stars -->
+                    <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                        <span>&#9733;</span> 
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="relative">
+                        <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                        <span class="text-white">&#9733;</span>
+                        </span> 
+                        <span class="text-black font-bold">(1.2k learners)</span>
+                    </div>
+
+                        <!-- Text Section -->
+                    <div>
+                        <div class="flex items-center space-x-2 mb-2">
+                            <img src="Images/crs2.1.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                            <h3 class="text-lg font-bold text-black">Python Programming</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Learn the language powering AI, data science and modern apps</p>
+                        <div class="flex items-center space-x-2 mb-2">
+                            <img src="Images/lect2.0.png" alt="img" class="h-2 w-2 object-contain">
+                            <h3 class="text-md font-bold text-black">Prof. James Okoro</h3>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Course 2 -->
+                <div class="w-full max-w-sm mx-auto">
+    <!-- Image -->
+                    <img src="Images/crs2.2.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                <!-- Stars -->
+                    <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                        <span>&#9733;</span> 
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733</span>                 
+                        <span class="text-black font-bold">(890 learners)</span>
+                    </div>
+
+                        <!-- Text Section -->
+                    <div>
+                        <div class="flex items-center space-x-2 mb-2">
+                            <img src="Images/crs2.2.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                            <h3 class="text-lg font-bold text-black">Digital Marketing</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">From SEO to social media, build campaigns that convert</p>
+                        <div class="flex items-center space-x-2 mb-2">
+                            <img src="Images/lect2.0.png" alt="img" class="h-2 w-2 object-contain">
+                            <h3 class="text-md font-bold text-black">Prof. Sophia Adeyemi</h3>
+                        </div>
+                    </div>
+                </div>    
+    
+        <!-- Course 3 -->
+                <div class="w-full max-w-sm mx-auto">
+    <!-- Image -->
+                    <img src="Images/crs2.3.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                <!-- Stars -->
+                    <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                        <span>&#9733;</span> 
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="relative">
+                        <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                        <span class="text-white">&#9733;</span>
+                        </span> 
+                        <span class="relative">
+                        <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                        <span class="text-white">&#9733;</span>
+                        </span> 
+                        <span class="text-black font-bold">(1.7k learners)</span>
+                    </div>
+
+                        <!-- Text Section -->
+                    <div>
+                        <div class="flex items-center space-x-2 mb-2">
+                            <img src="Images/crs2.3.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                            <h3 class="text-lg font-bold text-black">UI/UX Design</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Learn the language powering AI, data science and modern apps</p>
+                        <div class="flex items-center space-x-2 mb-2">
+                            <img src="Images/lect2.0.png" alt="img" class="h-2 w-2 object-contain">
+                            <h3 class="text-md font-bold text-black">Prof. Daniel Musa</h3>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                <a href="#" class="bg-[#00418B] text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2">Explore All Courses</a>
+                </div>
+        </div>
+    </section>
+
 
 
 
