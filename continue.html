@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Sign Up</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+        body {
+                @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Onest&display=swap');
+            }
+    </style>
+    </head>
+    <body class="min-h-screen bg-white flex">
+        <div class="flex gap-4">
+            <div class="w-full md:w-1/2 flex flex-col justify-center items-center px-8 md:px-16 py-10 bg-white border-r border-gray-200">
+                <div class="w-full max-w-lg border-8 border-[#00418B] rounded-xl p-6 shadow-sm">
+                    <form class="space-y-2">
+                    <div class="flex gap-4">
+                        <div="w-1/2">
+                            <label for="Name" class="block text-lg font-medium text-black-900">First Name</label>
+                            <input type="Name" id="Name" class="w-full mt-1 px-3 py-2 border border-[#00418B] rounded-md text-[#00418B]" 
+                                        placeholder="" class="text-blue-500">
+                        </div>
+                        <div class="w-1/2">
+                                        <label for="Name" class="block text-lg font-medium text-black-900">Last Name</label>
+                                <input type="Name" id="Name" class="w-full mt-1 px-3 py-2 border border-[#00418B] rounded-md text-[#00418B]" 
+                                        placeholder="Last Name" class="text-blue-500">
+                        </div>
+                    
+                    
+                    <div>
+                    <label for="email" class="block text-lg font-medium text-black-900">Email</label>
+                            <input type="email" id="email" class="w-full mt-1 px-3 py-2 border border-[#00418B] rounded-md text-[#00418B]" 
+                                    placeholder="" class="text-blue-500">
+                    </div>
+                    <div>
+                            <label for="password" class="block text-lg font-medium text-black-900">Password</label>
+                            <input type="password" id="password" class="w-full mt-1 px-3 py-2 border border-[#00418B] rounded-md" placeholder="">
+                        </div>
+
+
+
+                    <div class="bg=white rounded-2xl p-8 w-full max-w-md text-center">
+                        <h2 class="text-2xl text-black mb-6">Join SkillHatch for free as a</h2>
+                        <div class="flex justify-center mb-6">
+                            <button class="px-6 py-2 border border-[#00418B] rounded-lg text-[#00418B] hover:bg-[#00418B] hover:text-white">
+                                Learner
+                            </button>
+                            <button class="px-6 py-2 border border-[#00418B] rounded-lg text-[#00418B] hover:bg-[#00418B] hover:text-white">
+                                Teacher
+                            </button>
+                        </div>
+
+                <!--D.O.B-->
+                        <div class="text-left mb-6">
+                            <label class="block text-black font-bold mb-2">Field of Interest</label>
+
+                            <div class="flex gap-4">
+                                <select class="w-1/2 border border-[#00418B] rounded-lg p-2 text-gray-500">
+                                    <option>Technology</option>
+                                    <option>Business</option>
+                                    <option>Creative Arts</option>
+                                    <option>Science & Health</option>
+                                    <option>Languages</option>
+                                    <option>Lifestyle</option>
+                                    <option>Sports</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                        <button type="submit" class="w-full border-2 border-[#00418B] text-[#00418B] px-4 py-2 rounded-lg font-bold flex items-center justify-center">
+                        <img src="Images/google.png" alt="google" class="w-4 h-4 mr-2">    
+                            Sign in with Google
+                        </button>
+                        <button type="submit" class="w-full bg-[#00418B] text-white py-2 rounded-md font-bold">
+                            Sign Up
+                        </button>
+                    </form>
+                        
+                    
+                    
+                </div>
+
+                
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="hidden md:block md:w-1/2">
+                <img src="Images/login pic.png" alt="Login illustration" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </body>
+</html>

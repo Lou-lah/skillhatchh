@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>SkillHatch Login</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+        body {
+                @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Onest&display=swap');
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-white flex">
+
+        <div class="w-full md:w-1/2 flex flex-col justify-center items-center px-8 md:px-16 py-10 bg-white border-r border-gray-200">
+            <div class="w-full max-w-lg border-8 border-[#00418B] rounded-xl p-6 shadow-sm">
+                <div class="flex justify-center mb-4">
+                    <img src="Images/logo.png" alt="SkillHatch Logo"  class="h-20 w-20 md:h-24 md:w-24 object-contain">
+                </div>
+
+                <h4 class="text-3xl mb-4 text-center leading-tight">
+                    Welcome back to <span class="text-[#00418B]" style="font-family:'Inknut Antiqua', serif;">SKILLHATCH</span>
+                </h4>
+                <h6 class="text-sm mb-4 text-center text-gray-400">
+                    Log in to your account.<span class="text-[#00418B] hover:underline cursor-pointer">
+                        <a href="signup.html">Sign up instead</a></span>
+                </h6>
+
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-black-900">Email</label>
+                        <input type="email" id="email" class="w-full mt-1 px-3 py-2 border border-[#00418B] rounded-md text-[#00418B]" 
+                                placeholder="account@skillhatch.com" class="text-blue-500">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-lg font-medium text-black-900">Password</label>
+                        <input type="password" id="password" class="w-full mt-1 px-3 py-2 border border-[#00418B] rounded-md" placeholder="">
+                    </div>
+                    <button type="submit" class="w-full bg-[#00418B] text-white py-2 rounded-md font-bold">
+                        Log In
+                    </button>
+                    <button type="submit" class="w-full border-2 border-[#00418B] text-[#00418B] px-4 py-2 rounded-lg font-bold flex items-center justify-center">
+                    <img src="Images/google.png" alt="google" class="w-4 h-4 mr-2">    
+                        Sign in with Google
+                    </button>
+                </form>
+                <p class="text-sm text-gray-500 mt-2">
+                    By signing up you agree to our <span class="text-[#00418B]">Terms of Service</span> and <span class="text-[#00418B]">Privacy Policy</span>
+                </p>
+            </div>
+
+            
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="hidden md:block md:w-1/2">
+            <img src="Images/login pic.png" alt="Login illustration" class="w-full h-full object-cover">
+        </div>
+
+    </body>
+</html>
+
