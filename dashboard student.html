@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>    
+    <title>SKILLHATCH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+                @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Onest&display=swap');
+            }
+    </style>
+    </head>
+
+    <body class="min-h-screen bg-white flex">
+        <!--Sidebar-->
+        <!--<header class="bg-white shadow-md flex items-center justify-between px-6 py-4">
+            <button id="menu-toggle" class="block sm:hidden text-[#00418B] focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            
+
+        </header>-->
+        <aside class="w-64 bg-[#00418B] text-white flex flex-col justify-between">
+            <div>
+                <div class="flex items-center gap-2 ml-6 mt-4">
+                    <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                    <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                </div>
+                <nav class="mt-16">
+                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Dashboard</button></a>
+                    <a href="courses.html" class="flex items-center px-6 py-3 ">Courses</a>
+
+                </nav>
+
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 overflow-y-auto p-6">
+            <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center rounded-lg px-3 py-2 w-ful max-w-sm">
+                <input type="text" placeholder="search anything" class="w-1/2 px-4 py-2 border rounded-md focus:outline-none">
+                
+                </div>
+
+                <div class="flex items-center gap-4">
+                    
+                    <img src="Images/bell.png" alt="notifications" class="w-6 h-6 cursor-pointer">
+                    <div class="w-10 h-10 bg-[#00418B] rounded-full flex items-center justify-center text-white font-semibold">HO</div>
+                    <span class="bg-whitenpx-4 py-2 rounded-full font-medium text-grey-600">hillsolamode@icloud.com</span>
+                </div>
+            </div>
+
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-4 mt-4">Dashboard Overview</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <h3 class="text-3xl font-bold">60%</h3>
+                        <p class="text-black">Progress</p>
+                        
+                        <img src="Images/Frame.png" alt="bar" w-12 h-2>
+                        <p class="text-sm text-black">You have completed 12/18 courses.</p>
+                    </div>
+
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <h3 class="text-3xl font-bold">15.4</h3>
+                        <p class="text-black">Hours Learned</p>
+                        <img src="Images/hours.png" alt="bar" h-1 w-1>
+                    </div>
+
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <h3 class="text-3xl font-bold">5</h3>
+                        <p class="text-black">Days Streaked</p>
+                        <img src="Images/streak.png" alt="bar" h-1 w-1>
+                    </div>
+
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <h3 class="text-3xl font-bold">4</h3>
+                        <p class="text-black">Badges</p>
+                        <img src="Images/badge.png" alt="bar" h-1 w-1>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="mb-10 border-4 border-[#00418B] rounded-lg p-4 bg-white">
+                <h3 class="text-xl font-semibold mb-3">Upcoming</h3>
+                <div class="space-y-3">
+                    <p><span class="font-semibold">Assignment 3:</span> Data Modeling <br><span class="text-gray-500 text-sm">Due Sept 5, 2025 - 11:59 PM</span></p>
+                    <p></p>
+                </div>
+
+            </section>
+        </main>
+
+    </body>
+</html>
