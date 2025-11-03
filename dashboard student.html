@@ -34,7 +34,14 @@
                 <nav class="mt-16">
                     <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
                         <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Dashboard</button></a>
-                    <a href="courses.html" class="flex items-center px-6 py-3 ">Courses</a>
+                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Courses</button></a>
+                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Assessment</button></a>
+                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Profile</button></a>
+                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Settings</button></a>
 
                 </nav>
 
@@ -88,15 +95,52 @@
 
                 </div>
             </section>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                <div class="md:col-span-2 space-y-6">
+            
+                    <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white">
+                        <h3 class="text-xl font-semibold mb-3">Upcoming</h3>
+                        <div class="space-y-3">
+                            <p><span class="font-semibold">Assignment 3: Data Modeling</span> <br><span class="text-gray-500 text-sm">Due Sept 5, 2025 - 11:59 PM</span></p>
+                            <p><span class="font-semibold">Live Session: UX Design </span><br><span class="text-gray-500">Live Q&A Session with Professor Smith, Saturday</span></p>
+                            <p><span class="font-semibold">Quiz Reminder</span><br><span class="text-gray-500">Calculus Unit 2 Quiz - Friday</span></p>
+                        </div>
+                    </section>
 
-            <section class="mb-10 border-4 border-[#00418B] rounded-lg p-4 bg-white">
-                <h3 class="text-xl font-semibold mb-3">Upcoming</h3>
-                <div class="space-y-3">
-                    <p><span class="font-semibold">Assignment 3:</span> Data Modeling <br><span class="text-gray-500 text-sm">Due Sept 5, 2025 - 11:59 PM</span></p>
-                    <p></p>
+                    <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold mb-3">Community Feed</h3>
+                            <a href="#" class="text-[#00418B] text-sm font-medium hover:underline">View All</a>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-semibold">Professor Smith</p>
+                                <p class="text-gray-400 text-sm">1 hour ago</p>
+                                <p class="text-black text-sm">Reminder: Meeting at 5pm. <br> (zoom link attached)</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Sarah K</p>
+                                <p class="text-gray-400 text-sm">4 hours ago</p>
+                                <p class="text-black text-sm">Does anyone understand Question 4 of<br> the Assignment 22. Lets discuus</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-
-            </section>
+                
+                <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white h-full mt-6 md:mt-0">
+                    <h3 class="text-xl font-semibold mb-3">Current Courses</h3>
+                    <div>
+                        <img src="Images/python2.png" alt="pyt course" class="w-full h-32 object-contain mb-3">
+                        <p class="font-semibold">Python</p>
+                        <img src="Images/bar2.png" alt="progress bar" class="w-18 h-2">
+                        <p class="text-sm text-black">You have completed <span class="text-[#00418B]">45%</span> of this course</p>
+                        <button class="w-full bg-[#00418B] text-white py-2 rounded-md hover:bg-[#00418B]">Click To Resume</button>
+                    </div>
+                </section>
+            </div>
+            
         </main>
 
     </body>
