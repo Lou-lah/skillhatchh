@@ -9,7 +9,8 @@
     </head>
     <body class="bg-white">
         <div class="flex h-screen">
-            <aside class="w-64 bg-[#00418B] text-white flex flex-col justify-start">
+            <!-- Sidebar: hidden on small screens, toggle with menu button -->
+            <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-start">
                 <div>
                     <div class="flex items-center gap-2 ml-6 mt-12">
                     <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
@@ -30,6 +31,10 @@
                 <!-- Centered page container: ensures consistent left/right edges for all sections -->
                 <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
                     <div class="flex items-center justify-between mb-6">
+                        <!-- Mobile menu button (visible on small screens) -->
+                        <button id="menu-toggle" class="sm:hidden p-2 mr-2 rounded-md bg-[#00418B] text-white">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                        </button>
                         <input type="text" placeholder="Search anything" class="w-1/2 px-4 py-2 border rounded-md focus:outline-none"/>
                         <div class="flex items-center gap-4">
                             <img src="Images/bell.png" alt="notifications" class="w-6 h-6 cursor-pointer">
@@ -38,8 +43,71 @@
                             <span class="text-sm text-gray-300">Learner</span></p>
                         </div>
                     </div>
+
+                    <h2 class="text-2xl font-bold mb-6">Courses</h2>
+                    
+                        <!-- Centered overlapping toggle for Explore / My courses -->
+                        <div class="flex justify-center mb-6">
+                            <!-- Toggle: stacks on small screens -->
+                            <div id="courseToggle" class="inline-flex flex-col sm:inline-flex sm:flex-row items-center relative toggle-parent">
+                                    <button data-target="explore" type="button" class="toggle-btn w-full sm:w-auto relative z-20 px-6 py-2 border border-gray-300 rounded-full sm:rounded-l-full bg-white text-black transition-all">
+                                    <span class="inline-block">Explore courses</span>
+                                </button>
+                                    <button data-target="my" type="button" class="toggle-btn w-full sm:w-auto relative sm:-ml-3 z-10 px-6 py-2 border border-gray-300 rounded-full sm:rounded-r-full bg-white text-black transition-all">
+                                    <span class="inline-block">My courses</span>
+                                </button>
+                            </div>
+                        </div>
             
             </main>
+            <script>
+            (function(){
+                const buttons = document.querySelectorAll('.toggle-btn');
+                function clearActive(){
+                    buttons.forEach(b=>{
+                        b.classList.remove('bg-blue-100','border-2','border-blue-400','z-30');
+                        b.classList.add('bg-white');
+                        b.style.zIndex = '';
+                    });
+                }
+                buttons.forEach(btn=>{
+                    btn.addEventListener('click', (e)=>{
+                        const t = btn.dataset.target;
+                        // update visual state
+                        clearActive();
+                        btn.classList.remove('bg-white');
+                        btn.classList.add('bg-blue-100','border-2','border-blue-400','z-30');
+                        btn.style.zIndex = 30;
+
+                        // Navigate when Explore is clicked
+                        if(t === 'explore'){
+                            window.location.href = 'explore courses.html';
+                        }
+                        // If 'my' is clicked, stay on this page (or navigate to 'my courses.html' if desired)
+                        // else if(t === 'my') { window.location.href = 'my courses.html'; }
+                    });
+                });
+
+                // set initial active to My courses on this page without triggering navigation
+                const init = document.querySelector('.toggle-btn[data-target="my"]');
+                if(init){
+                    // visually mark it active
+                    clearActive();
+                    init.classList.remove('bg-white');
+                    init.classList.add('bg-blue-100','border-2','border-blue-400','z-30');
+                    init.style.zIndex = 30;
+                }
+
+                // Mobile sidebar toggle
+                const menuBtn = document.getElementById('menu-toggle');
+                const sidebar = document.getElementById('sidebar');
+                if(menuBtn && sidebar){
+                    menuBtn.addEventListener('click', ()=>{
+                        sidebar.classList.toggle('hidden');
+                    });
+                }
+            })();
+        </script>
         </div>
     </body>
 </html>

@@ -25,7 +25,8 @@
             
 
         </header>-->
-        <aside class="w-64 bg-[#00418B] text-white flex flex-col justify-between">
+    <!-- Sidebar: hidden on small screens; toggled with the hamburger button -->
+    <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
             <div>
                 <div class="flex items-center gap-2 ml-6 mt-12">
                     <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
@@ -52,14 +53,17 @@
 
         <main class="flex-1 overflow-y-auto p-6">
             <div class="flex items-center justify-between mb-6">
-                    <input type="text" placeholder="Search anything" class="w-1/2 px-4 py-2 border rounded-md focus:outline-none"/>
-                    <div class="flex items-center gap-4">
+                    <!-- Mobile menu button -->
+                    <button id="menu-toggle" class="sm:hidden p-2 mr-2 rounded-md bg-[#00418B] text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                    <input type="text" placeholder="Search anything" class="w-full sm:w-1/2 px-4 py-2 border rounded-md focus:outline-none"/>
+                    <div class="hidden sm:flex items-center gap-4">
                         <img src="Images/bell.png" alt="notifications" class="w-6 h-6 cursor-pointer">
                         <div class="w-10 h-10 bg-[#00418B] rounded-full flex items-center justify-center text-white font-semibold">HO</div>
                         <p class="font-semibold">hillsolumodej@icloud.com<br>
                         <span class="text-sm text-gray-300">Learner</span></p>
                     </div>
-                </div>
             </div>
 
             <section class="mb-10">
@@ -140,6 +144,19 @@
             </div>
             
         </main>
+
+        <script>
+            // Mobile sidebar toggle for dashboard
+            (function(){
+                const menuBtn = document.getElementById('menu-toggle');
+                const sidebar = document.getElementById('sidebar');
+                if(menuBtn && sidebar){
+                    menuBtn.addEventListener('click', ()=>{
+                        sidebar.classList.toggle('hidden');
+                    });
+                }
+            })();
+        </script>
 
     </body>
 </html>
