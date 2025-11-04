@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+                <title>Explore Courses</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+            /* inner white border when active */
+            .inner-white {
+                box-shadow: inset 0 0 0 4px rgba(255,255,255,1);
+            }
+            /* slightly larger parent border to 'extend' past child buttons */
+            .toggle-parent {
+                padding: 4px; /* creates visible outer border area */
+                border-radius: 9999px;
+            }
+        </style>
+    </head>
+    <body class="bg-white">
+        <div class="flex h-screen">
+            <aside class="w-64 bg-[#00418B] text-white flex flex-col justify-start">
+                <div>
+                    <div class="flex items-center gap-2 ml-6 mt-12">
+                    <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                    <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                </div>
+                    <nav class="space-y-4 mt-16">
+                        <a href="dashboard student.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Dashboard</a>
+                        <a href="explore courses.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Courses</a>
+                        <a href="assessment.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Assessment</a>
+                        <a href="profile.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Profile</a>
+                        <a href="settings.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Settings</a>
+                        <a href="login.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Logout</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <main class="flex-1 overflow-y-auto p-6">
+                <!-- Centered page container: ensures consistent left/right edges for all sections -->
+                <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <input type="text" placeholder="Search anything" class="w-1/2 px-4 py-2 border rounded-md focus:outline-none"/>
+                        <div class="flex items-center gap-4">
+                            <img src="Images/bell.png" alt="notifications" class="w-6 h-6 cursor-pointer">
+                            <div class="w-10 h-10 bg-[#00418B] rounded-full flex items-center justify-center text-white font-semibold">HO</div>
+                            <p class="font-semibold">hillsolumodej@icloud.com<br>
+                            <span class="text-sm text-gray-300">Learner</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-6">Courses</h2>
+                    
+                        <!-- Centered overlapping toggle for Explore / My courses -->
+                        <div class="flex justify-center mb-6">
+                            <div id="courseToggle" class="inline-flex items-center relative">
+                                <button data-target="explore" type="button" class="toggle-btn relative z-20 px-6 py-2 border border-gray-300 rounded-l-full bg-white text-black transition-all">
+                                    <span class="inline-block">Explore courses</span>
+                                </button>
+                                <button data-target="my" type="button" class="toggle-btn relative -ml-3 z-10 px-6 py-2 border border-gray-300 rounded-r-full bg-white text-black transition-all">
+                                    <span class="inline-block">My courses</span>
+                                </button>
+                            </div>
+                        </div>
+                    
+                        <div class="flex justify-between mb-6">
+                            <input type="text" placeholder="Search Courses..." class="w-1/2 px-4 py-2 border rounded-lg outline-[#00418B]"/>
+                            <h2 class="mt-2 font-bold">Filter by</h2>
+                            <select class="px-4 py-2 border rounded-lg outline-[#00418B]">
+                                <option>Technology</option>
+                                <option>Business</option>
+                                <option>Creative Arts</option>
+                                <option>Science & Health</option>
+                                <option>Languages</option>
+                                <option>Lifestyle</option>
+                                <option>Sports</option>
+                                <option>Graphic Design</option>
+                            </select>
+                        </div>
+
+                <!-- Course Cards -->
+                <!-- Section container: ensures both course sections align to same horizontal gutters -->
+                <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <section>
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
+        <!-- Course 1 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/crs2.1.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black">(1.2k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/crs2.1.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Python Programming</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/okoro.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Prof. James Okoro</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Learn the language powering AI, data science and modern apps</p>
+                            <div>
+                                <p class="text-blue-800">12 Lessons</p>
+                                <p class="text-sm mt-1">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
+                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/crs2.2.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733</span>                 
+                            <span class="text-black font-bold">(890 learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/crs2.2.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Digital Marketing</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/sophia.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Prof. Sophia Rose</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">From SEO to social media, build campaigns that convert.</p>
+                            <p class="text-blue-800 mt-2">22 lessons</p>
+                            <p class="text-sm mt-1">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$17</span></p>
+                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                    </div>    
+
+                    <!-- Course 3 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/crs2.3.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(1.7k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/crs2.3.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">UI/UX Design</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/daniel.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Prof. Daniel Musa</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">Learn the language powering AI, data science and modern apps</p>
+                            <p class="text-blue-800">18 Lessons</p>
+                            <p class="text-sm mt-1">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$10</span></p>
+                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+
+            <section class="mt-12">
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
+        <!-- Course 4 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/data science.png" alt="Course 4" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(1.3k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/dsa.png" alt="DSA Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Data Science & Analytics</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/henry.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Dr. Henry Okafor</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Master data cleaning, visualization, and machine learning basics</p>
+                            <p class="text-blue-800 font-bold">25 Lessons</p>
+                            <p class="text-sm mt-1 font-">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$35</span></p>
+                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                    </div>
+        <!-- Course 5 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/content.png" alt="Course 5" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(1.3k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/cam.png" alt="content Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Content Creation</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/james.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">James Carter</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Master the art of storytelling, editing, and professional video production. Learn how to..</p>
+                            <p class="text-blue-800 font-bold">16 Lessons</p>
+                            <p class="text-sm mt-1 font-bold">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
+                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                    </div>
+        <!-- Course 6 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/ma.png" alt="Course 6" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(890 learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/m.a.d.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Mobile App Development</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/clara.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Dr. Clara Zhang</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Build real-world mobile applications for both iOS and Android. You'll explore frameworks like...</p>
+                            <p class="text-blue-800 font-bold">21 Lessons</p>
+                            <p class="text-sm mt-1 font-bold">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
+                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                </div>
+
+            <div class="flex justify-center gap-3 mt-10">
+                <button class="px-4 py-2 border rounded-lg">Previous</button>
+                <button class="px-4 py-2 border rounded-lg bg-[#00418B] text-white">1</button>
+                <button class="px-4 py-2 border rounded-lg">2</button>
+                <button class="px-4 py-2 border rounded-lg">3</button>
+                <button class="px-4 py-2 border rounded-lg">Next</button>
+            </div>
+            </main>
+
+
+        </div>
+        <!-- Toggle script: handles active visual state and optional navigation -->
+        <script>
+            (function(){
+                const buttons = document.querySelectorAll('.toggle-btn');
+                function clearActive(){
+                    buttons.forEach(b=>{
+                        b.classList.remove('bg-blue-100','border-2','border-blue-400','z-30');
+                        b.classList.add('bg-white');
+                        b.style.zIndex = '';
+                    });
+                }
+                buttons.forEach(btn=>{
+                    btn.addEventListener('click', (e)=>{
+                        clearActive();
+                        btn.classList.remove('bg-white');
+                        btn.classList.add('bg-blue-100','border-2','border-blue-400','z-30');
+                        btn.style.zIndex = 30;
+                        const t = btn.dataset.target;
+                        if(t === 'my'){
+                            // navigate to the My Courses page (keeps toggle UX)
+                            window.location.href = 'my courses.html';
+                        }
+                    });
+                });
+
+                // set initial active (Explore)
+                const init = document.querySelector('.toggle-btn[data-target="explore"]');
+                if(init) init.click();
+            })();
+        </script>
+
+        </body>
+
+</html>
