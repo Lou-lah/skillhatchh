@@ -60,12 +60,12 @@
                     
                         <!-- Centered overlapping toggle for Explore / My courses -->
                         <div class="flex justify-center mb-6">
-                            <!-- Toggle: stacks on small screens -->
-                            <div id="courseToggle" class="inline-flex flex-col sm:inline-flex sm:flex-row items-center relative toggle-parent">
-                                    <button data-target="explore" type="button" class="toggle-btn w-full sm:w-auto relative z-20 px-6 py-2 border border-gray-300 rounded-full sm:rounded-l-full bg-white text-black transition-all">
+                            <!-- Toggle: keep inline on small screens as well -->
+                            <div id="courseToggle" class="inline-flex items-center relative">
+                                    <button data-target="explore" type="button" class="toggle-btn relative z-20 px-6 py-2 border border-gray-300 rounded-l-full bg-white text-black transition-all">
                                     <span class="inline-block">Explore courses</span>
                                 </button>
-                                    <button data-target="my" type="button" class="toggle-btn w-full sm:w-auto relative sm:-ml-3 z-10 px-6 py-2 border border-gray-300 rounded-full sm:rounded-r-full bg-white text-black transition-all">
+                                    <button data-target="my" type="button" class="toggle-btn relative -ml-3 z-10 px-6 py-2 border border-gray-300 rounded-r-full bg-white text-black transition-all">
                                     <span class="inline-block">My courses</span>
                                 </button>
                             </div>
@@ -87,8 +87,7 @@
                         </div>
 
                 <!-- Course Cards -->
-                <!-- Section container: ensures both course sections align to same horizontal gutters -->
-                <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
             <section>
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
         <!-- Course 1 -->
@@ -122,7 +121,7 @@
                             <p class="text-gray-400 mb-4">Learn the language powering AI, data science and modern apps</p>
                             <div>
                                 <p class="text-blue-800">12 Lessons</p>
-                                <p class="text-sm mt-1">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
+                                <p class="text-sm mt-1"><span class="font-bold">PRICE:</span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
                                 <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                             </div>
                         </div>
@@ -155,7 +154,7 @@
                             </div>
                             <p class="text-gray-600 mb-4">From SEO to social media, build campaigns that convert.</p>
                             <p class="text-blue-800 mt-2">22 lessons</p>
-                            <p class="text-sm mt-1">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$17</span></p>
+                            <p class="text-sm mt-1"><span class="font-bold">PRICE:</span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$17</span></p>
                             <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                         </div>
                     </div>    
@@ -193,7 +192,7 @@
                             </div>
                             <p class="text-gray-600 mb-4">Learn the language powering AI, data science and modern apps</p>
                             <p class="text-blue-800">18 Lessons</p>
-                            <p class="text-sm mt-1">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$10</span></p>
+                            <p class="text-sm mt-1"><span class="font-bold">PRICE:</span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$10</span></p>
                             <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                         </div>
                     </div>
@@ -231,8 +230,8 @@
                                 <h3 class="text-md font-bold text-black">Dr. Henry Okafor</h3>
                             </div>
                             <p class="text-gray-400 mb-4">Master data cleaning, visualization, and machine learning basics</p>
-                            <p class="text-blue-800 font-bold">25 Lessons</p>
-                            <p class="text-sm mt-1 font-">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$35</span></p>
+                            <br><p class="text-blue-800 font-bold">25 Lessons</p>
+                            <p class="text-sm mt-1"><span class="font-bold">PRICE:</span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$35</span></p>
                             <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                         </div>
                     </div>
@@ -265,7 +264,7 @@
                             </div>
                             <p class="text-gray-400 mb-4">Master the art of storytelling, editing, and professional video production. Learn how to..</p>
                             <p class="text-blue-800 font-bold">16 Lessons</p>
-                            <p class="text-sm mt-1 font-bold">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
+                            <p class="text-sm mt-1"><span class="font-bold">PRICE:</span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
                             <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                         </div>
                     </div>
@@ -299,7 +298,7 @@
                             </div>
                             <p class="text-gray-400 mb-4">Build real-world mobile applications for both iOS and Android. You'll explore frameworks like...</p>
                             <p class="text-blue-800 font-bold">21 Lessons</p>
-                            <p class="text-sm mt-1 font-bold">PRICE: <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
+                            <p class="text-sm mt-1"><span class="font-bold">PRICE:</span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
                             <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                         </div>
                     </div>

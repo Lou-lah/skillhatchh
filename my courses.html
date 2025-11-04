@@ -48,16 +48,101 @@
                     
                         <!-- Centered overlapping toggle for Explore / My courses -->
                         <div class="flex justify-center mb-6">
-                            <!-- Toggle: stacks on small screens -->
-                            <div id="courseToggle" class="inline-flex flex-col sm:inline-flex sm:flex-row items-center relative toggle-parent">
-                                    <button data-target="explore" type="button" class="toggle-btn w-full sm:w-auto relative z-20 px-6 py-2 border border-gray-300 rounded-full sm:rounded-l-full bg-white text-black transition-all">
+                            <!-- Toggle: keep inline on small screens as well -->
+                            <div id="courseToggle" class="inline-flex items-center relative">
+                                    <button data-target="explore" type="button" class="toggle-btn relative z-20 px-6 py-2 border border-gray-300 rounded-l-full bg-white text-black transition-all">
                                     <span class="inline-block">Explore courses</span>
                                 </button>
-                                    <button data-target="my" type="button" class="toggle-btn w-full sm:w-auto relative sm:-ml-3 z-10 px-6 py-2 border border-gray-300 rounded-full sm:rounded-r-full bg-white text-black transition-all">
+                                    <button data-target="my" type="button" class="toggle-btn relative -ml-3 z-10 px-6 py-2 border border-gray-300 rounded-r-full bg-white text-black transition-all">
                                     <span class="inline-block">My courses</span>
                                 </button>
                             </div>
                         </div>
+
+                <!--my courses-->
+                <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <section>
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
+        <!-- Course 1 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/crs2.1.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black">(1.2k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/crs2.1.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Python Programming</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/okoro.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Prof. James Okoro</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Learn the language powering AI, data science and modern apps</p>
+                            <div>
+                                <p class="text-blue-800 font-bold">12 Lessons</p>
+                                <p class="text-sm font-semibold mt-2">54% Complete</p>
+                                <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 54%"></div>
+                                </div>
+                                <p class="text-sm mt-4"><span class="font-bold">PRICE:</span> <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
+                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
+                            </div>
+                        </div>
+                    </div>
+
+        <!-- Course 2 -->
+                    <!-- Course 4 -->
+                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/data science.png" alt="Course 4" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(1.3k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/dsa.png" alt="DSA Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Data Science & Analytics</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/henry.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Dr. Henry Okafor</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Master data cleaning, visualization, and machine learning basics</p>
+                            <div>
+                                <p class="text-blue-800 font-bold">25 Lessons</p>
+                                <p class="text-sm font-semibold mt-2">78% Complete</p>
+                                <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 78%"></div>
+                                </div>
+                                <p class="text-sm mt-4"><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
+                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
+                            </div>
+                            </div>
             
             </main>
             <script>
