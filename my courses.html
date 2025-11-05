@@ -10,22 +10,30 @@
     <body class="bg-white">
         <div class="flex h-screen">
             <!-- Sidebar: hidden on small screens, toggle with menu button -->
-            <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-start">
-                <div>
-                    <div class="flex items-center gap-2 ml-6 mt-12">
+            <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
+            <div>
+                <div class="flex items-center gap-2 ml-6 mt-12">
                     <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
                     <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
                 </div>
-                    <nav class="space-y-4 mt-16">
-                        <a href="dashboard student.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Dashboard</a>
-                        <a href="explore courses.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Courses</a>
-                        <a href="assessment.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Assessment</a>
-                        <a href="profile.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Profile</a>
-                        <a href="settings.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Settings</a>
-                        <a href="login.html" class="block py-2 px-4 rounded hover:bg-[#003370]">Logout</a>
-                    </nav>
-                </div>
-            </aside>
+                <nav class=" mt-16">
+                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Dashboard</button></a>
+                    <a href="explore courses.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Courses</button></a>
+                    <a href="assessment.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Assessment</button></a>
+                    <a href="profile.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Profile</button></a>
+                    <a href="settings.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Settings</button></a>
+                </nav>
+            </div>
+            <div class="px-6 py-4 border-t border-blue-300">
+                <a href="login.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
+                    <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Logout</button></a>
+            </div>
+        </aside>
 
             <main class="flex-1 overflow-y-auto p-6">
                 <!-- Centered page container: ensures consistent left/right edges for all sections -->
@@ -60,11 +68,11 @@
                         </div>
 
                 <!--my courses-->
-                <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+                
             <section>
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
         <!-- Course 1 -->
-                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+                    <div class="w-full leading-relaxed">
         <!-- Image -->
                         <img src="Images/crs2.1.png" alt="Course 1" class="w-full h-48 object-cover rounded">
 
@@ -92,7 +100,7 @@
                                 <h3 class="text-md font-bold text-black">Prof. James Okoro</h3>
                             </div>
                             <p class="text-gray-400 mb-4">Learn the language powering AI, data science and modern apps</p>
-                            <div>
+                            <br><div>
                                 <p class="text-blue-800 font-bold">12 Lessons</p>
                                 <p class="text-sm font-semibold mt-2">54% Complete</p>
                                 <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
@@ -103,16 +111,15 @@
                             </div>
                         </div>
                     </div>
-
-        <!-- Course 2 -->
-                    <!-- Course 4 -->
-                    <div class="w-full max-w-sm mx-auto leading-relaxed">
+            <!--Course 2-->
+                    <div class="w-full leading-relaxed">
         <!-- Image -->
                         <img src="Images/data science.png" alt="Course 4" class="w-full h-48 object-cover rounded">
 
                     <!-- Stars -->
                         <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
                             <span>&#9733;</span> 
+                            <span>&#9733;</span>
                             <span>&#9733;</span>
                             <span>&#9733;</span>
                             <span class="relative">
@@ -139,11 +146,171 @@
                                 <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
                                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 78%"></div>
                                 </div>
-                                <p class="text-sm mt-4"><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
+                                <p class="text-sm mt-4"><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">FREE</span></p>
                                 <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
                             </div>
+                        </div>
+                    </div>
+                <!--Course 3-->
+                    <div class="w-full leading-relaxed">
+            <!-- Image -->
+                        <img src="Images/ai.png" alt="Course 4" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(2.5k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/aii.png" alt="DSA Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Artificial Intelligence</h3>
                             </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/henry.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Dr. Henry Okafor</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Master data cleaning, visualization, and machine learning basics</p>
+                            <br><div>
+                                <p class="text-blue-800 font-bold">25 Lessons</p>
+                                <p class="text-sm font-semibold mt-2">94% Complete</p>
+                                <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 94%"></div>
+                                </div>
+                                <p class="text-sm mt-4"><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">FREE</span></p>
+                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
+                            </div>
+                        </div>
+                    </div>
+
             
+                    </div> 
+            </section>
+            
+                
+            <section class="mt-12">
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <!--course1-->
+                    <div class="w-full leading-relaxed">
+            <!-- Image -->
+                            <img src="Images/crs2.3.png" alt="Course 1" class="w-full h-48 object-cover rounded">
+
+                        <!-- Stars -->
+                            <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                                <span>&#9733;</span> 
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="relative">
+                                <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                                <span class="text-white">&#9733;</span>
+                                </span> 
+                                <span class="relative">
+                                <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                                <span class="text-white">&#9733;</span>
+                                </span> 
+                                <span class="text-black font-bold">(1.7k learners)</span>
+                            </div>
+
+                                <!-- Text Section -->
+                            <div>
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <img src="Images/crs2.3.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                                    <h3 class="text-lg font-bold text-black">UI/UX Design</h3>
+                                </div>
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <img src="Images/daniel.png" alt="img" class="h-8 w-8 object-contain">
+                                    <h3 class="text-md font-bold text-black">Prof. Daniel Musa</h3>
+                                </div>
+                                <p class="text-gray-400 mb-4">Turn creativity into user-friendly interfaces and digital products</p>
+                                <p class="text-blue-800">18 Lessons</p>
+                                <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
+                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                            </div>
+                        </div>
+
+            <!-- Course 2 -->
+                    <div class="w-full leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/content.png" alt="Course 5" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(1.3k learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/cam.png" alt="content Logo" class="h-4 w-4 object-contain">
+                                <h3 class="text-lg font-bold text-black">Content Creation</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/james.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">James Carter</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Master the art of storytelling, editing, and professional video production. Learn how to..</p>
+                            <br><p class="text-blue-800 font-bold">16 Lessons</p>
+                            <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$20</span></p>
+                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                    </div>
+        <!-- Course 3 -->
+                    <div class="w-full leading-relaxed">
+        <!-- Image -->
+                        <img src="Images/ma.png" alt="Course 6" class="w-full h-48 object-cover rounded">
+
+                    <!-- Stars -->
+                        <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
+                            <span>&#9733;</span> 
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span class="relative">
+                            <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                            <span class="text-white">&#9733;</span>
+                            </span> 
+                            <span class="text-black font-bold">(890 learners)</span>
+                        </div>
+
+                            <!-- Text Section -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/m.a.d.png" alt="Python Logo" class="h-4 w-4 object-contain">
+                                <!-- larger and prevent wrapping; use truncate to show ellipsis if it overflows on small screens -->
+                                <h3 class="text-lg font-bold text-black truncate">Mobile App Development</h3>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <img src="Images/clara.png" alt="img" class="h-8 w-8 object-contain">
+                                <h3 class="text-md font-bold text-black">Dr. Clara Zhang</h3>
+                            </div>
+                            <p class="text-gray-400 mb-4">Build real-world mobile applications for both iOS and Android. You'll explore frameworks like...</p>
+                            <p class="text-blue-800 font-bold">21 Lessons</p>
+                            <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$55</span></p>
+                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                    </div>
+                        
+                </div>
+            </section>
+            <div>
+                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Go to explore</button>
+            </div>
             </main>
             <script>
             (function(){
