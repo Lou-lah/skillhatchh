@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>    
+    <title>SKILLHATCH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+                @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Onest&display=swap');
+            }
+    </style>
+    </head>
+
+    <body class="bg-white">
+        <div class="flex h-screen">
+            <!-- Sidebar: hidden on small screens; toggled with the hamburger button -->
+            <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex-shrink-0 min-h-screen">
+                <!-- Main content wrapper -->
+                <div class="flex flex-col justify-between h-full w-full">
+                    <!-- Top section with logo and navigation -->
+                    <div>
+                        <div class="flex items-center gap-2 ml-6 mt-12">
+                            <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                            <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                        </div>
+                        <nav class="mt-16">
+                            <a href="dashboard student.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Dashboard</button></a>
+                            <a href="explore courses.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Courses</button></a>
+                            <a href="assessment.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Assessment</button></a>
+                            <a href="profile.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Profile</button></a>
+                            <a href="settings.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
+                        </nav>
+                    </div>
+                    <!-- Bottom section with logout -->
+                    <div class="mt-auto border-t border-blue-300">
+                        <a href="login.html" class="flex items-center px-6 py-4">
+                            <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Logout</button></a>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="flex-1 overflow-y-auto p-6">
+            <section class="p-4 bg-white">
+
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-10">
+                                <img src="Images/tay.png" alt="smith" class="w-28 h-28">
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">Taylor Roberts</p>
+                                    <h6>@taytayrob</h6>
+                                    <p class="text-gray-400 text-sm mt-2">Aspiring Data Scientists | Love Python & AI</p>
+                                    <p class="text-black text-sm mb-2">Undergraduate</p>
+                                    <button><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md"><img src="Images/ep.png" class="w-2 h-2"> EDIT PROFILE</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-10">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-4">
+                            <div class="p-4 border-4 border-[#00418B] rounded-lg text-center">
+                                <h3 class="text-3xl font-bold">8</h3>
+                                <p class="text-sm text-black">Courses Enrolled</p>
+                            </div>
+                            <div class="p-4 border-4 border-[#00418B] rounded-lg text-center">
+                                <h3 class="text-3xl font-bold">6</h3>
+                                <p class="text-sm text-black">Awards</p>
+                            </div>
+                            <div class="p-4 border-4 border-[#00418B] rounded-lg text-center">
+                                <h3 class="text-3xl font-bold">120</h3>
+                                <p class="text-sm text-black">Hours Learned</p>
+                            </div>
+                            <div class="p-4 border-4 border-[#00418B] rounded-lg text-center">
+                                <h3 class="text-3xl font-bold">15</h3>
+                                <p class="text-sm text-black">Days Streak</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-8">
+                        <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                            <div class="container mx-auto p-4">
+                                <div class="grid grid-cols-2 gap-6">
+                                    <section class="bg-blue-100 rounded-xl p-4">
+                                        <h2 class="text-lg font-semibold mb-4">Progress Overview</h2>
+                                        <div class="space-y-4">
+                                            <div>
+                                                <p class="flex justify-between text-sm text-black mb-1"><span>Python</span></p>
+                                                <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5">
+                                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 54%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="flex justify-between text-sm text-black mb-1"><span>Data Science</span></p>
+                                                <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5">
+                                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                                                </div>
+                                            </div>  
+                                            <div>
+                                                <p class="flex justify-between text-sm text-black mb-1"><span>UI/UX Design</span></p>
+                                                <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5">
+                                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                        </div>        
+                                    </section>
+
+                                    <section class="bg-blue-100 rounded-xl p-4">
+                                        <h2 class="text-lg font-semibold mb-4">Awards</h2>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="flex flex-col items-center p-3 rounded-lg bg-blue-200">
+                                                <img src="Images/brain.png" class="w-6 h-6">
+                                                <h4 class="text-center">Creative Thinker</h4>
+                                            </div>
+                                            <div class="flex flex-col items-center p-3 rounded-lg bg-blue-200">
+                                                <img src="Images/star.png" class="w-10 h-10">
+                                                <h4 class="text-center">Top Scorer</h4>
+                                            </div>
+                                            <div class="flex flex-col items-center p-3 rounded-lg bg-blue-200">
+                                                <img src="Images/light.png" class="w-10 h-10">
+                                                <h4 class="text-center">Fast<br>Learner</h4>
+                                            </div>
+                                            <div class="flex flex-col items-center p-3 rounded-lg bg-blue-200">
+                                                <img src="Images/champ.png" class="w-8 h-8">
+                                                <h4 class="text-center">Quiz Champion</h4>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="bg-blue-100 rounded-xl p-4">
+                                        <h2 class="text-lg font-semibold mb-4">Recent Activity</h2>
+                                        <div class="space-y-4">
+                                            <div class="flex items-start gap-3 mt-2">
+                                                <div class="flex-1">
+                                                    <p class="text-md">Last Login</p>
+                                                </div>
+                                                <p class="text-gray-600">1 hour ago</p>
+                                            </div>
+                                            <div class="flex items-start gap-3 mt-2">
+                                                <div class="flex-1">
+                                                    <p class="text-md">Lessons: Data Visualization</p>
+                                                </div>
+                                                <p class="text-gray-600">2 days ago</p>
+                                            </div>
+                                            <div class="flex items-start gap-3 mt-2">
+                                                <div class="flex-1">
+                                                    <p class="text-md">Quiz  93%</p>
+                                                </div>
+                                                <p class="text-gray-600">2 days ago</p>
+                                            </div>
+                                            <div class="flex items-start gap-3 mt-2">
+                                                <div class="flex-1">
+                                                    <p class="text-md">Assignment: Regression Analysis</p>
+                                                </div>
+                                                <p class="text-gray-600">3 days ago</p>
+                                            </div>
+                                        </div>        
+                                    </section>
+                                    
+                                    <section class="bg-blue-100 rounded-xl p-4">
+                                        <h2 class="text-lg font-semibold mb-4">Certificates</h2>
+                                        <div class="flex items-start gap-3">
+                                            <img src="Images/pbc.png" alt="Assignment" class="w-6 h-5">
+                                            <div class="flex-1">
+                                                <p><span class="font-semibold text-lg">Python Basics</span> <br><span class="text-black text-sm">Certificates</span></p>
+                                            </div>
+                                            <a href="#">
+                                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg text-sm">Download</button>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-start gap-3 mt-2">
+                                            <img src="Images/dm.png" alt="Assignment" class="w-6 h-5">
+                                            <div class="flex-1">
+                                                <p><span class="font-semibold text-md">Data Modeling</span> <br><span class="text-black text-sm">Badge</span></p>
+                                            </div>
+                                            <a href="#">
+                                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg text-sm">Download</button>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-start gap-3 mt-2">
+                                            <img src="Images/gda.png" alt="Assignment" class="w-6 h-5">
+                                            <div class="flex-1">
+                                                <p><span class="font-semibold text-md">Google Data Analytics</span> <br><span class="text-black text-sm">External Certification</span></p>
+                                            </div>
+                                            <a href="#">
+                                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg text-sm">Download</button>
+                                            </a>
+                                        </div>
+                                    </section>
+
+                                    <section class="bg-blue-100 rounded-xl p-4">
+                                        <h2 class="text-lg font-semibold mb-4">Community Engagement</h2>
+                                        <div class="flex items-start gap-3">
+                                            <img src="Images/forum.png" alt="Assignment" class="w-6 h-5">
+                                            <div class="flex-1">
+                                                <p><span class="font-semibold text-lg">Forum Post</span> <br><span class="text-black text-sm">Data Science Discussion</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start gap-3">
+                                            <img src="Images/study.png" alt="Assignment" class="w-6 h-5">
+                                            <div class="flex-1">
+                                                <p><span class="font-semibold text-lg">Study Group</span> <br><span class="text-black text-sm">ML Project</span></p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="bg-blue-100 rounded-xl p-4">
+                                        <h2 class="text-lg font-semibold mb-4">Resources</h2>
+                                        <a href="#" class="text-[#00418B] text-sm">Download code files</a>
+                                        <a href="#" class="text-[#00418B] text-sm">Past Questions</a>
+                                        <a href="#" class="text-[#00418B] text-sm">Download lecture notes</a>
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+            </main>
+        </div>
+
+       
+    </body>
+</html>
