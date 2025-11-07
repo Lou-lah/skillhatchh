@@ -12,27 +12,28 @@
             <!-- Sidebar: hidden on small screens, toggle with menu button -->
             <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
             <div>
-                <div class="flex items-center gap-2 ml-6 mt-12">
-                    <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
-                    <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
-                </div>
-                <nav class=" mt-16">
-                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Dashboard</button></a>
-                    <a href="explore courses.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Courses</button></a>
-                    <a href="assessment.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Assessment</button></a>
-                    <a href="profile.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Profile</button></a>
-                    <a href="settings.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Settings</button></a>
-                </nav>
-            </div>
-            <div class="px-6 py-4 border-t border-blue-300">
-                <a href="login.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                    <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Logout</button></a>
-            </div>
+                        <div class="flex items-center gap-2 ml-6 mt-12">
+                            <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                            <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                        </div>
+                        <nav class="mt-16">
+                            <a href="dashboard student.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Dashboard</button></a>
+                            <a href="explore courses.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Courses</button></a>
+                            <a href="assessment.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Assessment</button></a>
+                            <a href="profile.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Profile</button></a>
+                            <a href="settings.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
+                        </nav>
+                    </div>
+                    <!-- Bottom section with logout -->
+                    <div class="mt-auto border-t border-blue-300">
+                        <a href="login.html" class="flex items-center px-6 py-4">
+                            <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Logout</button></a>
+                    </div>
         </aside>
 
             <main class="flex-1 overflow-y-auto p-6">
@@ -100,14 +101,16 @@
                                 <h3 class="text-md font-bold text-black">Prof. James Okoro</h3>
                             </div>
                             <p class="text-gray-400 mb-4">Learn the language powering AI, data science and modern apps</p>
-                            <br><div>
+                            <div>
                                 <p class="text-blue-800 font-bold">12 Lessons</p>
                                 <p class="text-sm font-semibold mt-2">54% Complete</p>
                                 <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
                                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 54%"></div>
                                 </div>
                                 <p class="text-sm mt-4"><span class="font-bold">PRICE:</span> <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
+                                <a href="course detail.html">
                                 <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +183,7 @@
                                 <h3 class="text-md font-bold text-black">Dr. Henry Okafor</h3>
                             </div>
                             <p class="text-gray-400 mb-4">Master data cleaning, visualization, and machine learning basics</p>
-                            <br><div>
+                            <div>
                                 <p class="text-blue-800 font-bold">25 Lessons</p>
                                 <p class="text-sm font-semibold mt-2">94% Complete</p>
                                 <div class="w-full bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
@@ -231,7 +234,7 @@
                                     <h3 class="text-md font-bold text-black">Prof. Daniel Musa</h3>
                                 </div>
                                 <p class="text-gray-400 mb-4">Turn creativity into user-friendly interfaces and digital products</p>
-                                <p class="text-blue-800">18 Lessons</p>
+                                <p class="text-blue-800 font-bold mt-4">18 Lessons</p>
                                 <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
                                 <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                             </div>
@@ -265,7 +268,7 @@
                                 <h3 class="text-md font-bold text-black">James Carter</h3>
                             </div>
                             <p class="text-gray-400 mb-4">Master the art of storytelling, editing, and professional video production. Learn how to..</p>
-                            <br><p class="text-blue-800 font-bold">16 Lessons</p>
+                            <p class="text-blue-800 font-bold">16 Lessons</p>
                             <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$20</span></p>
                             <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
                         </div>

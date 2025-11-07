@@ -28,27 +28,28 @@
     <!-- Sidebar: hidden on small screens; toggled with the hamburger button -->
     <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
             <div>
-                <div class="flex items-center gap-2 ml-6 mt-12">
-                    <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
-                    <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
-                </div>
-                <nav class=" mt-16">
-                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Dashboard</button></a>
-                    <a href="explore courses.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Courses</button></a>
-                    <a href="assessment.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Assessment</button></a>
-                    <a href="profile.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Profile</button></a>
-                    <a href="settings.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Settings</button></a>
-                </nav>
-            </div>
-            <div class="px-6 py-4 border-t border-blue-300">
-                <a href="login.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                    <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Logout</button></a>
-            </div>
+                        <div class="flex items-center gap-2 ml-6 mt-12">
+                            <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                            <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                        </div>
+                        <nav class="mt-16">
+                            <a href="dashboard student.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Dashboard</button></a>
+                            <a href="explore courses.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Courses</button></a>
+                            <a href="assessment.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Assessment</button></a>
+                            <a href="profile.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Profile</button></a>
+                            <a href="settings.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
+                        </nav>
+                    </div>
+                    <!-- Bottom section with logout -->
+                    <div class="mt-auto border-t border-blue-300">
+                        <a href="login.html" class="flex items-center px-6 py-4">
+                            <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Logout</button></a>
+                    </div>
         </aside>
 
         <main class="flex-1 overflow-y-auto p-6">
@@ -80,20 +81,20 @@
 
                     <div class="p-4 border-4 border-[#00418B] rounded-lg">
                         <h3 class="text-3xl font-bold">15.4</h3>
-                        <p class="text-black">Hours Learned</p>
-                        <img src="Images/hours.png" alt="bar" class="w-12 h-12 object-contain">
+                        <p class="text-black font-bold mt-2">Hours Learned</p>
+                        <img src="Images/hours.png" alt="bar" class="w-12 h-12 object-contain object-left mt-2">
                     </div>
 
                     <div class="p-4 border-4 border-[#00418B] rounded-lg">
                         <h3 class="text-3xl font-bold">5</h3>
-                        <p class="text-black">Days Streaked</p>
-                        <img src="Images/streak.png" alt="bar" class="w-12 h-12 object-contain m2-4">
+                        <p class="text-black font-bold mt-2">Days Streaked</p>
+                        <img src="Images/streak.png" alt="bar" class="w-12 h-12 object-contain object-left mt-2">
                     </div>
 
                     <div class="p-4 border-4 border-[#00418B] rounded-lg">
                         <h3 class="text-3xl font-bold">4</h3>
-                        <p class="text-black">Badges</p>
-                        <img src="Images/badge.png" alt="bar" class="w-12 h-12 object-contain">
+                        <p class="text-black font-bold mt-2">Badges</p>
+                        <img src="Images/badge.png" alt="bar" class="w-12 h-12 object-contain object-left mt-2">
                     </div>
 
                 </div>
@@ -105,9 +106,24 @@
                     <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white">
                         <h3 class="text-xl font-semibold mb-3">Upcoming</h3>
                         <div class="space-y-3">
-                            <p><span class="font-semibold">Assignment 3: Data Modeling</span> <br><span class="text-gray-500 text-sm">Due Sept 5, 2025 - 11:59 PM</span></p>
-                            <p><span class="font-semibold">Live Session: UX Design </span><br><span class="text-gray-500">Live Q&A Session with Professor Smith, Saturday</span></p>
-                            <p><span class="font-semibold">Quiz Reminder</span><br><span class="text-gray-500">Calculus Unit 2 Quiz - Friday</span></p>
+                            <div class="flex items-start gap-3">
+                                <img src="Images/d1.png" alt="Assignment" class="w-6 h-6">
+                                <div class="flex-1">
+                                    <p><span class="font-semibold text-xl">Assignment 3: Data Modeling</span> <br><span class="text-gray-500 text-sm">Due Sept 5, 2025 - 11:59 PM</span></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <img src="Images/d2.png" alt="Assignment" class="w-6 h-6">
+                                <div class="flex-1">
+                                    <p><span class="font-semibold text-xl">Live Session: UX Design </span><br><span class="text-gray-500">Live Q&A Session with Professor Smith, Saturday</span></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <img src="Images/d3.png" alt="Assignment" class="w-6 h-6">
+                                <div class="flex-1">
+                                    <p><span class="font-semibold text-xl">Quiz Reminder</span><br><span class="text-gray-500">Calculus Unit 2 Quiz - Friday</span></p>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -118,13 +134,18 @@
                         </div>
 
                         <div class="space-y-4">
-                            <div>
-                                <p class="font-semibold">Professor Smith</p>
-                                <p class="text-gray-400 text-sm">1 hour ago</p>
-                                <p class="text-black text-sm">Reminder: Meeting at 5pm. <br> (zoom link attached)</p>
+                            <div class="flex items-start gap-3">
+                                <img src="Images/p.smith.png" alt="smith" class="w-14 h-14">
+                                <div class="flex-1">
+                                    <p class="font-semibold text-lg">Professor Smith</p>
+                                    <p class="text-gray-400 text-sm">1 hour ago</p>
+                                    <p class="text-black text-sm">Reminder: Meeting at 5pm. <br> (zoom link attached)</p>
+                                </div>
                             </div>
-                            <div>
-                                <p class="font-semibold">Sarah K</p>
+                            <div class="flex items-start gap-3 mt-2">
+                                <img src="Images/s.k.png" alt="sarah" class="w-14 h-14">
+                                <div class="flex-1">
+                                <p class="font-semibold text-lg">Sarah K</p>
                                 <p class="text-gray-400 text-sm">4 hours ago</p>
                                 <p class="text-black text-sm">Does anyone understand Question 4 of<br> the Assignment 22. Lets discuus</p>
                             </div>
@@ -140,7 +161,9 @@
                         <p class="font-semibold">Python</p>
                         <img src="Images/bar2.png" alt="progress bar" class="w-30 h-2 object-contain">
                         <p class="text-sm text-black">You have completed <span class="text-[#00418B]">45%</span> of this course</p>
-                        <button class="w-full bg-[#00418B] text-white py-2 rounded-md hover:bg-[#00418B]">Click To Resume</button>
+                        <a href="course detail.html">
+                            <button class="w-full bg-[#00418B] text-white py-2 rounded-md hover:bg-[#00418B]">Click To Resume</button>
+                        </a>    
                     </div>
                 </section>
             </div>

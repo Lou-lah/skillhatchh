@@ -23,27 +23,28 @@
             <!-- Sidebar: hidden on small screens, toggle with menu button -->
             <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
             <div>
-                <div class="flex items-center gap-2 ml-6 mt-12">
-                    <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
-                    <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
-                </div>
-                <nav class=" mt-16">
-                    <a href="dashboard student.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Dashboard</button></a>
-                    <a href="explore courses.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Courses</button></a>
-                    <a href="assessment.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Assessment</button></a>
-                    <a href="profile.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Profile</button></a>
-                    <a href="settings.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                        <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Settings</button></a>
-                </nav>
-            </div>
-            <div class="px-6 py-4 border-t border-blue-300">
-                <a href="login.html" class="flex items-center px-6 py-3 hover:bg-blue-200">
-                    <button class="w-full text-left px-4 py-2 rounded-lg  focus:bg-[#00418B]/20">Logout</button></a>
-            </div>
+                        <div class="flex items-center gap-2 ml-6 mt-12">
+                            <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                            <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                        </div>
+                        <nav class="mt-16">
+                            <a href="dashboard student.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Dashboard</button></a>
+                            <a href="explore courses.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Courses</button></a>
+                            <a href="assessment.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Assessment</button></a>
+                            <a href="profile.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Profile</button></a>
+                            <a href="settings.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
+                        </nav>
+                    </div>
+                    <!-- Bottom section with logout -->
+                    <div class="mt-auto border-t border-blue-300">
+                        <a href="login.html" class="flex items-center px-6 py-4">
+                            <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Logout</button></a>
+                    </div>
         </aside>
 
             <main class="flex-1 overflow-y-auto p-6">
@@ -66,7 +67,6 @@
 
                 <h2 class="text-2xl font-bold mb-6">Courses</h2>
                     
-                        <!-- Centered overlapping toggle for Explore / My courses -->
                         <div class="flex justify-center mb-6">
                             <!-- Toggle: keep inline on small screens as well -->
                             <div id="courseToggle" class="inline-flex items-center relative">
@@ -130,7 +130,9 @@
                             <div>
                                 <p class="text-blue-800">12 Lessons</p>
                                 <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
+                                <a href="course detail.html">
                                 <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>    
+    <title>SKILLHATCH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+                @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Onest&display=swap');
+            }
+    </style>
+    </head>
+
+    <body class="bg-white">
+        <div class="flex h-screen">
+            <!-- Sidebar: hidden on small screens; toggled with the hamburger button -->
+            <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex-shrink-0 min-h-screen">
+                <!-- Main content wrapper -->
+                <div class="flex flex-col justify-between h-full w-full">
+                    <!-- Top section with logo and navigation -->
+                    <div>
+                        <div class="flex items-center gap-2 ml-6 mt-12">
+                            <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                            <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                        </div>
+                        <nav class="mt-16">
+                            <a href="dashboard student.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Dashboard</button></a>
+                            <a href="explore courses.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Courses</button></a>
+                            <a href="assessment.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Assessment</button></a>
+                            <a href="profile.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Profile</button></a>
+                            <a href="settings.html" class="flex items-center px-6 py-3">
+                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
+                        </nav>
+                    </div>
+                    <!-- Bottom section with logout -->
+                    <div class="mt-auto border-t border-blue-300">
+                        <a href="login.html" class="flex items-center px-6 py-4">
+                            <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Logout</button></a>
+                    </div>
+                </div>
+            </aside>
+
+        <main class="flex-1 overflow-y-auto p-6">
+            <div class="flex items-center justify-between mb-6">
+                    <!-- Mobile menu button -->
+                    <button id="menu-toggle" class="sm:hidden p-2 mr-2 rounded-md bg-[#00418B] text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                    <!-- Match explore page: keep search and profile visible on small screens -->
+                    <input type="text" placeholder="Search anything" class="w-1/2 px-4 py-2 border rounded-md focus:outline-none"/>
+                    <div class="flex items-center gap-4">
+                        <img src="Images/bell.png" alt="notifications" class="w-6 h-6 cursor-pointer">
+                        <div class="w-10 h-10 bg-[#00418B] rounded-full flex items-center justify-center text-white font-semibold">HO</div>
+                        <p class="font-semibold">hillsolumodej@icloud.com<br>
+                        <span class="text-sm text-gray-300">Learner</span></p>
+                    </div>
+            </div>
+
+            <section class="mb-10">
+                <div class="grid grid-cols-3 md:grid-cols-3 gap-6 mt-4">
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <h3 class="text-5xl text-blue-800 font-bold">3</h3><br>
+                        <img src="Images/assess1.png" alt="bar" class="w-28 h-14 object-contain object-left"><br>
+                        <p class="text-sm font-bold text-blue-800">Active Subjects</p>
+                    </div>
+
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <h3 class="text-5xl text-blue-800 font-bold">12</h3><br>
+                        <img src="Images/assess2.png" alt="bar" class="w-28 h-14 object-contain object-left"><br>
+                        <p class="text-sm font-bold text-blue-800">Completed Assessments</p>
+                    </div>
+
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <h3 class="text-5xl text-blue-800 font-bold">78%</h3><br>
+                        <img src="Images/assess3.png" alt="bar" class="w-28 h-14 object-contain object-left"><br>
+                        <p class="text-sm font-bold text-blue-800">Average Score</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-10">
+                <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-4">
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <img src="Images/assess4.png" alt="bar" class="w-28 h-26 object-contain object-left"><br>
+                        <p class="text-lg font-bold text-black">Python Basics</p><br>
+                        <img src="Images/assess4.1.png" alt="pass mark"  class="w-28 h-14 object-contain object-left"><br>
+                        <p class="text-4xl font-bold text-green-700">85%</p><br>
+                        <div class="flex gap-4">
+                            <button class="bg-blue-800 text-white px-2 py-2 rounded-lg">Retry Quiz</button>
+                            <button class="bg-blue-800 text-white px-4 py-2 rounded-lg">Download Certificate</button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                        <img src="Images/assess5.png" alt="bar" class="w-28 h-26 object-contain object-left"><br>
+                        <p class="text-lg font-bold text-black">Data Science QUIZ 2</p><br>
+                        <img src="Images/assess5.1.png" alt="fail mark"  class="w-28 h-14 object-contain object-left"><br>
+                        <p class="text-4xl font-bold text-green-700">45%</p><br>
+                        <div class="flex gap-4">
+                            <button class="bg-blue-800 text-white px-4 py-2 rounded-lg">Retry Quiz</button>
+                            <button class="bg-blue-800 text-white px-4 py-2 rounded-lg">Download Certificate</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        </div>
+
+
+    <script>
+        (function() {
+            const toggleBtn = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            if (!toggleBtn || !sidebar) return;
+
+            // Toggle visibility for small screens: remove/add hidden and block
+            toggleBtn.addEventListener('click', function() {
+                sidebar.classList.toggle('hidden');
+                sidebar.classList.toggle('block');
+            });
+
+            // Ensure correct initial state on load/resize
+            function handleResize() {
+                if (window.innerWidth >= 640) {
+                    // On larger screens, show the sidebar and remove mobile-specific block
+                    sidebar.classList.remove('hidden');
+                    sidebar.classList.remove('block');
+                } else {
+                    // On small screens, hide sidebar by default
+                    sidebar.classList.add('hidden');
+                    sidebar.classList.remove('block');
+                }
+            }
+
+            window.addEventListener('resize', handleResize);
+            handleResize();
+        })();
+    </script>
+    </body>
+</html>
