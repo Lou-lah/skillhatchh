@@ -5,11 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
         <title>Explore Courses</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+        body {
+                @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Onest&display=swap');
+            }
+    </style>
+</head>
     <body class="bg-white">
         <div class="flex h-screen">
-            <!-- Sidebar: hidden on small screens, toggle with menu button -->
             <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
             <div>
                         <div class="flex items-center gap-2 ml-6 mt-12">
@@ -29,7 +33,7 @@
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
                         </nav>
                     </div>
-                    <!-- Bottom section with logout -->
+                    <!-- logout -->
                     <div class="mt-auto border-t border-blue-300">
                         <a href="login.html" class="flex items-center px-6 py-4">
                             <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Logout</button></a>
@@ -37,10 +41,10 @@
         </aside>
 
             <main class="flex-1 overflow-y-auto p-6">
-                <!-- Centered page container: ensures consistent left/right edges for all sections -->
+                
                 <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
                     <div class="flex items-center justify-between mb-6">
-                        <!-- Mobile menu button (visible on small screens) -->
+                        <!-- Mobile menu button  -->
                         <button id="menu-toggle" class="sm:hidden p-2 mr-2 rounded-md bg-[#00418B] text-white">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
                         </button>
@@ -72,8 +76,8 @@
                 
             <section>
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
-        <!-- Course 1 -->
-                    <div class="w-full leading-relaxed">
+                <!-- Course 1 -->
+                    <div class="w-full leading-relaxed flex flex-col h-full min-h-[420px]">
         <!-- Image -->
                         <img src="Images/crs2.1.png" alt="Course 1" class="w-full h-48 object-cover rounded">
 
@@ -91,7 +95,7 @@
                         </div>
 
                             <!-- Text Section -->
-                        <div>
+                        <div class="flex-1">
                             <div class="flex items-center space-x-2 mb-2">
                                 <img src="Images/crs2.1.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
                                 <h3 class="text-lg font-bold text-black">Python Programming</h3>
@@ -108,14 +112,14 @@
                                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 54%"></div>
                                 </div>
                                 <p class="text-sm mt-4"><span class="font-bold">PRICE:</span> <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">$20</span></p>
-                                <a href="course detail.html">
-                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
-                                </a>
                             </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="course detail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</a>
                         </div>
                     </div>
             <!--Course 2-->
-                    <div class="w-full leading-relaxed">
+                    <div class="w-full leading-relaxed flex flex-col h-full min-h-[420px]">
         <!-- Image -->
                         <img src="Images/data science.png" alt="Course 4" class="w-full h-48 object-cover rounded">
 
@@ -133,7 +137,7 @@
                         </div>
 
                             <!-- Text Section -->
-                        <div>
+                        <div class="flex-1">
                             <div class="flex items-center space-x-2 mb-2">
                                 <img src="Images/dsa.png" alt="DSA Logo" class="h-4 w-4 object-contain">
                                 <h3 class="text-lg font-bold text-black">Data Science & Analytics</h3>
@@ -150,12 +154,14 @@
                                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 78%"></div>
                                 </div>
                                 <p class="text-sm mt-4"><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">FREE</span></p>
-                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
                             </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="course detail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</a>
                         </div>
                     </div>
                 <!--Course 3-->
-                    <div class="w-full leading-relaxed">
+                    <div class="w-full leading-relaxed flex flex-col h-full min-h-[420px]">
             <!-- Image -->
                         <img src="Images/ai.png" alt="Course 4" class="w-full h-48 object-cover rounded">
 
@@ -173,7 +179,7 @@
                         </div>
 
                             <!-- Text Section -->
-                        <div>
+                        <div class="flex-1">
                             <div class="flex items-center space-x-2 mb-2">
                                 <img src="Images/aii.png" alt="DSA Logo" class="h-4 w-4 object-contain">
                                 <h3 class="text-lg font-bold text-black">Artificial Intelligence</h3>
@@ -190,8 +196,10 @@
                                     <div class="bg-blue-600 h-2.5 rounded-full" style="width: 94%"></div>
                                 </div>
                                 <p class="text-sm mt-4"><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">FREE</span></p>
-                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</button>
                             </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="course detail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</a>
                         </div>
                     </div>
 
@@ -203,7 +211,7 @@
             <section class="mt-12">
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
             <!--course1-->
-                    <div class="w-full leading-relaxed">
+                    <div class="w-full leading-relaxed flex flex-col h-full min-h-[420px]">
             <!-- Image -->
                             <img src="Images/crs2.3.png" alt="Course 1" class="w-full h-48 object-cover rounded">
 
@@ -224,7 +232,7 @@
                             </div>
 
                                 <!-- Text Section -->
-                            <div>
+                            <div class="flex-1">
                                 <div class="flex items-center space-x-2 mb-2">
                                     <img src="Images/crs2.3.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
                                     <h3 class="text-lg font-bold text-black">UI/UX Design</h3>
@@ -236,12 +244,14 @@
                                 <p class="text-gray-400 mb-4">Turn creativity into user-friendly interfaces and digital products</p>
                                 <p class="text-blue-800 font-bold mt-4">18 Lessons</p>
                                 <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">FREE</span></p>
-                                <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                            </div>
+                            <div class="mt-4">
+                                <a href="course detail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">View Details</a>
                             </div>
                         </div>
 
             <!-- Course 2 -->
-                    <div class="w-full leading-relaxed">
+                    <div class="w-full leading-relaxed flex flex-col h-full min-h-[420px]">
         <!-- Image -->
                         <img src="Images/content.png" alt="Course 5" class="w-full h-48 object-cover rounded">
 
@@ -258,7 +268,7 @@
                         </div>
 
                             <!-- Text Section -->
-                        <div>
+                        <div class="flex-1">
                             <div class="flex items-center space-x-2 mb-2">
                                 <img src="Images/cam.png" alt="content Logo" class="h-4 w-4 object-contain">
                                 <h3 class="text-lg font-bold text-black">Content Creation</h3>
@@ -270,11 +280,13 @@
                             <p class="text-gray-400 mb-4">Master the art of storytelling, editing, and professional video production. Learn how to..</p>
                             <p class="text-blue-800 font-bold">16 Lessons</p>
                             <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$20</span></p>
-                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                        <div class="mt-4">
+                            <a href="course detail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">View Details</a>
                         </div>
                     </div>
         <!-- Course 3 -->
-                    <div class="w-full leading-relaxed">
+                    <div class="w-full leading-relaxed flex flex-col h-full min-h-[420px]">
         <!-- Image -->
                         <img src="Images/ma.png" alt="Course 6" class="w-full h-48 object-cover rounded">
 
@@ -292,7 +304,7 @@
                         </div>
 
                             <!-- Text Section -->
-                        <div>
+                        <div class="flex-1">
                             <div class="flex items-center space-x-2 mb-2">
                                 <img src="Images/m.a.d.png" alt="Python Logo" class="h-4 w-4 object-contain">
                                 <!-- larger and prevent wrapping; use truncate to show ellipsis if it overflows on small screens -->
@@ -305,7 +317,9 @@
                             <p class="text-gray-400 mb-4">Build real-world mobile applications for both iOS and Android. You'll explore frameworks like...</p>
                             <p class="text-blue-800 font-bold">21 Lessons</p>
                             <p class="text-sm mt-1"><span class="font-bold">PRICE: </span><span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-lg object-contain">$55</span></p>
-                            <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button>
+                        </div>
+                        <div class="mt-4">
+                            <a href="course detail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">View Details</a>
                         </div>
                     </div>
                         

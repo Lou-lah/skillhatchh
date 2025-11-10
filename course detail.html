@@ -19,9 +19,9 @@
         </style>
     </head>
     <body class="bg-white">
-        <div class="flex h-screen">
+        <div class="flex min-h-screen">
             
-            <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
+            <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between sticky top-0 h-screen">
                 <div class="flex flex-col justify-between h-full w-full">
                     
                     <div>
@@ -42,27 +42,35 @@
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
                         </nav>
                     </div>
-                    <!-- Bottom section with logout -->
+                    <!-- logout -->
                     <div class="mt-auto border-t border-blue-300">
                         <a href="login.html" class="flex items-center px-6 py-4">
                             <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Logout</button></a>
                     </div>
                 </div>
             </aside>
-            <main class="flex-1 justify-center p-6">
-                <section>
-                    <div class="m-0 p-0 w-full">
-                        <!-- banner-style image: full-width of the main area, responsive height, semi-transparent -->
-                        <img src="Images/crs2.1.png" alt="python banner" class="w-full h-56 sm:h-72 md:h-96 object-cover opacity-80 rounded-lg mb-6">
+            <main class="flex-1 justify-center relative">
+                <div class="absolute top-4 left-4 z-50">
+                    <button onclick="window.history.back()" aria-label="Go back" class="flex items-center gap-2 text-white font-medium bg-black/30 backdrop-blur-sm px-3 py-2 rounded-md shadow-sm hover:shadow-md hover:scale-105 transition transform hover:bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white/30 pointer-events-auto">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none">
+                            <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-sm font-semibold">Back</span>
+                    </button>
+                </div>
+                <section class="w-full">
+                    <div class="w-full">
+                        
+                        <img src="Images/crs2.1.png" alt="python banner" class="w-full h-56 sm:h-72 md:h-96 object-cover opacity-80">
                     </div>
                 </section>
 
-                <section>
+                <section class="px-6 pt-6">
                     <div class="flex items-start gap-3 mt-6">
-                                    <img src="Images/crs2.1.1.png" alt="Assignment" class="w-12 h-12">
-                                    <div class="flex-1">
-                                        <p class="font-semibold text-5xl">Pyhton Programming</p>
-                                    </div>
+                        <img src="Images/crs2.1.1.png" alt="Assignment" class="w-12 h-12">
+                        <div class="flex-1">
+                            <p class="font-semibold text-5xl">Python Programming</p>
+                        </div>
                     </div>
                     <div class="space-y-4 mt-6">
                         <div class="flex items-start gap-3">
@@ -70,25 +78,23 @@
                             <div class="flex-1">
                                 <p class="text-lg">Prof. James Okoro</p>
                                 <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-4xl">
-                                    <span>&#9733;</span> 
+                                    <span>&#9733;</span>
                                     <span>&#9733;</span>
                                     <span>&#9733;</span>
                                     <span>&#9733;</span>
                                     <span class="relative">
-                                    <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
-                                    <span class="text-white">&#9733;</span>
-                                    </span> 
+                                        <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
+                                        <span class="text-white">&#9733;</span>
+                                    </span>
                                     <span class="text-black">(1.2k learners)</span>
                                 </div>
-                                <div>
                                 <p class="text-sm mt-4"><span class="font-bold">PRICE:</span> <span class="px-2 py-1 bg-blue-200 text-black text-sm rounded-md">free</span></p>
                                 <div class="w-1/4 bg-gray-200 border-[#00418B] rounded-full h-2.5 mt-2">
-                                    <div class="bg-blue-600 h-2.5 rounded-full mt-2" style="width: 3%"></div> <p class="font-bold">0% complete</p>
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 3%"></div>
+                                    <p class="font-bold">0% complete</p>
                                 </div>
-                                
                             </div>
                         </div>
-                            </div>
                     </div>
                     
                     <div>
@@ -98,74 +104,74 @@
 
                     <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white w-1/2 mt-12">
                         <div class="flex items-center justify-between mb-3">
-                            <h3 class="text-xl font-semibold text-blue-800 mb-3">Lessons (10 Total)</h3>
-                            </div>
+                            <h3 class="text-xl font-semibold text-blue-800">Lessons (10 Total)</h3>
+                        </div>
 
                         <div class="space-y-4">
-                            <div class="flex items-start gap-3">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark1.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Introduction to Python & Setup</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark1.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Variables & Data Types</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Operators & Expressions</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Control Flow: If Statements</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Loops in Python</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Functions</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
-                                    <p class="text-md">Data  structures I: Lists & Tuples</p>
+                                    <p class="text-md">Data structures I: Lists & Tuples</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
-                                    <p class="text-md">Data  structures II: Dictionaries & Sets</p>
+                                    <p class="text-md">Data structures II: Dictionaries & Sets</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Error Handling & Exceptions</p>
                                 </div>
                                 <a href="#" class="text-[#00418B] text-sm">Click to Learn</a>
                             </div>
-                            <div class="flex items-start gap-3 mt-2">
+                            <div class="flex items-center gap-3">
                                 <img src="Images/mark2.png" class="w-8 h-8">
                                 <div class="flex-1">
                                     <p class="text-md">Final Project & Next Steps</p>
