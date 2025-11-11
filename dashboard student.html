@@ -13,10 +13,11 @@
     </style>
     </head>
 
-    <body class="min-h-screen bg-white flex">
+    <body class="bg-white">
+        <div class="flex h-screen">
 
-    <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
-            <div>
+        <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
+                    <div>
                         <div class="flex items-center gap-2 ml-6 mt-12">
                             <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
                             <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
@@ -63,7 +64,7 @@
             <section class="mb-10">
                 <h2 class="text-2xl font-bold mb-4 mt-4">Dashboard Overview</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                    <div class="p-4 border-2 border-[#00418B] rounded-lg">
                         <h3 class="text-3xl font-bold">60%</h3>
                         <p class="text-black">Progress</p>
                         
@@ -71,19 +72,19 @@
                         <p class="text-sm text-black">You have completed 12/18 courses.</p>
                     </div>
 
-                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                    <div class="p-4 border-2 border-[#00418B] rounded-lg">
                         <h3 class="text-3xl font-bold">15.4</h3>
                         <p class="text-black font-bold mt-2">Hours Learned</p>
                         <img src="Images/hours.png" alt="bar" class="w-12 h-12 object-contain object-left mt-2">
                     </div>
 
-                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                    <div class="p-4 border-2 border-[#00418B] rounded-lg">
                         <h3 class="text-3xl font-bold">5</h3>
                         <p class="text-black font-bold mt-2">Days Streaked</p>
                         <img src="Images/streak.png" alt="bar" class="w-12 h-12 object-contain object-left mt-2">
                     </div>
 
-                    <div class="p-4 border-4 border-[#00418B] rounded-lg">
+                    <div class="p-4 border-2 border-[#00418B] rounded-lg">
                         <h3 class="text-3xl font-bold">4</h3>
                         <p class="text-black font-bold mt-2">Badges</p>
                         <img src="Images/badge.png" alt="bar" class="w-12 h-12 object-contain object-left mt-2">
@@ -95,7 +96,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
                 <div class="md:col-span-2 space-y-6">
             
-                    <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white">
+                    <section class="border-2 border-[#00418B] rounded-lg p-4 bg-white">
                         <h3 class="text-xl font-semibold mb-3">Upcoming</h3>
                         <div class="space-y-3">
                             <div class="flex items-start gap-3">
@@ -119,7 +120,7 @@
                         </div>
                     </section>
 
-                    <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white">
+                    <section class="border-2 border-[#00418B] rounded-lg p-4 bg-white">
                         <div class="flex items-center justify-between mb-3">
                             <h3 class="text-xl font-semibold mb-3">Community Feed</h3>
                             <a href="#" class="text-[#00418B] text-sm font-medium hover:underline">View All</a>
@@ -145,7 +146,7 @@
                     </section>
                 </div>
                 
-                <section class="border-4 border-[#00418B] rounded-lg p-4 bg-white h-full mt-6 md:mt-0">
+                <section class="border-2 border-[#00418B] rounded-lg p-4 bg-white h-full mt-6 md:mt-0">
                     <h3 class="text-xl font-semibold mb-3">Current Courses</h3>
                     <div>
                         
@@ -175,5 +176,7 @@
             })();
         </script>
 
+    
+        </div>
     </body>
 </html>
