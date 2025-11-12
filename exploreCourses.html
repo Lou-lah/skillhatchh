@@ -17,21 +17,21 @@
             <!-- Sidebar: hidden on small screens, toggle with menu button -->
             <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
             <div>
-                        <div class="flex items-center gap-2 ml-6 mt-12">
-                            <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
-                            <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
-                        </div>
+                        <a href="index.html">
+                            <div class="flex items-center gap-2 ml-6 mt-12">
+                                    <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                                    <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                            </div>
+                        </a>
                         <nav class="mt-16">
-                            <a href="dashboard student.html" class="flex items-center px-6 py-3">
+                            <a href="dashboardStudent.html" class="flex items-center px-6 py-3">
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Dashboard</button></a>
-                            <a href="explore courses.html" class="flex items-center px-6 py-3">
+                            <a href="exploreCourses.html" class="flex items-center px-6 py-3">
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Courses</button></a>
                             <a href="assessment.html" class="flex items-center px-6 py-3">
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Assessment</button></a>
                             <a href="profile.html" class="flex items-center px-6 py-3">
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Profile</button></a>
-                            <a href="settings.html" class="flex items-center px-6 py-3">
-                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
                         </nav>
                     </div>
                     <!-- Bottom section with logout -->
@@ -78,6 +78,7 @@
                     
                         <div class="flex justify-between mb-6">
                             <input type="text" placeholder="Search Courses..." class="w-1/2 px-4 py-2 border rounded-lg outline-[#00418B]"/>
+                            <div class="flex items-center space-x-2">
                             <h2 class="mt-2 font-bold">Filter by</h2>
                             <select class="px-4 py-2 border rounded-lg outline-[#00418B]">
                                 <option>Technology</option>
@@ -89,6 +90,7 @@
                                 <option>Sports</option>
                                 <option>Graphic Design</option>
                             </select>
+                            </div>
                         </div>
 
                 <!-- Course Cards -->
@@ -129,7 +131,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <a href="course detail.html"><button class="w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button></a>
+                            <a href="courseDetail.html"><button class="w-full py-2 bg-[#00418B] text-white rounded-lg">View Details</button></a>
                         </div>
                     </div>
 
@@ -349,7 +351,7 @@
                         const t = btn.dataset.target;
                         if(t === 'my'){
                             // navigate to the My Courses page (keeps toggle UX)
-                            window.location.href = 'my courses.html';
+                            window.location.href = 'myCourses.html';
                         }
                     });
                 });

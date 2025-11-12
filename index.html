@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>    
     <title>SKILLHATCH</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body,footer {
@@ -147,101 +148,71 @@
                 </p>
             </div> 
 
-    <!-- Courses Section -->   
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
-        <!-- Course 1 -->
-                <div class="w-full max-w-sm mx-auto leading-relaxed">
-    <!-- Image -->
-                    <img src="Images/crs2.1.png" alt="Course 1" class="w-full h-48 object-cover rounded">
-
-                <!-- Stars -->
-                    <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
-                        <span>&#9733;</span> 
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span class="relative">
-                        <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
-                        <span class="text-white">&#9733;</span>
-                        </span> 
-                        <span class="text-black font-bold">(1.2k learners)</span>
-                    </div>
-
-                        <!-- Text Section -->
-                    <div>
+    <!-- Courses Section -->  
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="card">
+                    <img src="Images/crs2.1.png" alt="Course 1" class="card__media" />
+                    <div class="card__body">
                         <div class="flex items-center space-x-2 mb-2">
                             <img src="Images/crs2.1.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
-                            <h3 class="text-lg font-bold text-black">Python Programming</h3>
+                            <h3 class="card__title">Python Programming</h3>
                         </div>
-                        <p class="text-gray-600 mb-4">Learn the language powering AI, data science and modern apps</p>
-                        <div class="flex items-center space-x-2 mb-2">
-                            <img src="Images/lect2.0.png" alt="img" class="h-2 w-2 object-contain">
-                            <h3 class="text-md font-bold text-black">Prof. James Okoro</h3>
+                        <p class="card__subtitle">Learn the language powering AI, data science and modern apps</p>
+                        <div class="mt-auto">
+                            <div class="flex items-center space-x-2 mt-4">
+                                <img src="Images/lect2.0.png" alt="img" class="h-4 w-4 object-contain">
+                                <h4 class="text-sm font-semibold text-gray-700">Prof. James Okoro</h4>
+                            </div>
                         </div>
+                    </div>
+                    <div class="card__footer">
+                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;<span style="opacity:.45">&#9733;</span></span>
+                        <span class="text-black font-bold">(1.2k learners)</span>
                     </div>
                 </div>
 
-        <!-- Course 2 -->
-                <div class="w-full max-w-sm mx-auto leading-relaxed">
-    <!-- Image -->
-                    <img src="Images/crs2.2.png" alt="Course 1" class="w-full h-48 object-cover rounded">
-
-                <!-- Stars -->
-                    <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
-                        <span>&#9733;</span> 
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span>&#9733</span>                 
+                <!-- Course 2 -->
+                <div class="card">
+                    <img src="Images/crs2.2.png" alt="Course 2" class="card__media" />
+                    <div class="card__body">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <img src="Images/crs2.2.1.png" alt="Logo" class="h-4 w-4 object-contain">
+                            <h3 class="card__title">Digital Marketing</h3>
+                        </div>
+                        <p class="card__subtitle">From SEO to social media, build campaigns that convert</p>
+                        <div class="mt-auto">
+                            <div class="flex items-center space-x-2 mt-4">
+                                <img src="Images/lect2.0.png" alt="img" class="h-4 w-4 object-contain">
+                                <h4 class="text-sm font-semibold text-gray-700">Prof. Sophia Adeyemi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         <span class="text-black font-bold">(890 learners)</span>
                     </div>
+                </div>
 
-                        <!-- Text Section -->
-                    <div>
+                <!-- Course 3 -->
+                <div class="card">
+                    <img src="Images/crs2.3.png" alt="Course 3" class="card__media" />
+                    <div class="card__body">
                         <div class="flex items-center space-x-2 mb-2">
-                            <img src="Images/crs2.2.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
-                            <h3 class="text-lg font-bold text-black">Digital Marketing</h3>
+                            <img src="Images/crs2.3.1.png" alt="Logo" class="h-4 w-4 object-contain">
+                            <h3 class="card__title">UI/UX Design</h3>
                         </div>
-                        <p class="text-gray-600 mb-4">From SEO to social media, build campaigns that convert</p>
-                        <div class="flex items-center space-x-2 mb-2">
-                            <img src="Images/lect2.0.png" alt="img" class="h-2 w-2 object-contain">
-                            <h3 class="text-md font-bold text-black">Prof. Sophia Adeyemi</h3>
+                        <p class="card__subtitle">Learn practical design workflows for web and apps</p>
+                        <div class="mt-auto">
+                            <div class="flex items-center space-x-2 mt-4">
+                                <img src="Images/lect2.0.png" alt="img" class="h-4 w-4 object-contain">
+                                <h4 class="text-sm font-semibold text-gray-700">Prof. Daniel Musa</h4>
+                            </div>
                         </div>
                     </div>
-                </div>    
-    
-        <!-- Course 3 -->
-                <div class="w-full max-w-sm mx-auto leading-relaxed">
-    <!-- Image -->
-                    <img src="Images/crs2.3.png" alt="Course 1" class="w-full h-48 object-cover rounded">
-
-                <!-- Stars -->
-                    <div class="flex items-center space-x-1 text-yellow-400 mt-2 text-lg">
-                        <span>&#9733;</span> 
-                        <span>&#9733;</span>
-                        <span>&#9733;</span>
-                        <span class="relative">
-                        <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
-                        <span class="text-white">&#9733;</span>
-                        </span> 
-                        <span class="relative">
-                        <span class="text-yellow-400 absolute left-0 overflow-hidden w-1/2">&#9733;</span>
-                        <span class="text-white">&#9733;</span>
-                        </span> 
+                    <div class="card__footer">
+                        <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;<span style="opacity:.45">&#9733;</span></span>
                         <span class="text-black font-bold">(1.7k learners)</span>
-                    </div>
-
-                        <!-- Text Section -->
-                    <div>
-                        <div class="flex items-center space-x-2 mb-2">
-                            <img src="Images/crs2.3.1.png" alt="Python Logo" class="h-4 w-4 object-contain">
-                            <h3 class="text-lg font-bold text-black">UI/UX Design</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Learn the language powering AI, data science and modern apps</p>
-                        <div class="flex items-center space-x-2 mb-2">
-                            <img src="Images/lect2.0.png" alt="img" class="h-2 w-2 object-contain">
-                            <h3 class="text-md font-bold text-black">Prof. Daniel Musa</h3>
-                        </div>
                     </div>
                 </div>
     
@@ -539,7 +510,7 @@
                         <div>
                         <ul class="space-y-2 text-gray-200 text-sm leading-relaxed">
                         <li><a href="#" class="hover:underline">Home</a></li>
-                        <li><a href="explore courses.html" class="hover:underline">Courses</a></li>
+                        <li><a href="login.html" class="hover:underline">Courses</a></li>
                         <li><a href="#" class="hover:underline">Pricing/Plans</a></li>
                         <li><a href="#" class="hover:underline">Instructor Support</a></li>
                         <li><a href="#" class="hover:underline">Blog</a></li>

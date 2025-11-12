@@ -16,10 +16,12 @@
         <div class="flex h-screen">
             <aside id="sidebar" class="hidden sm:flex w-64 bg-[#00418B] text-white flex flex-col justify-between">
             <div>
-                        <div class="flex items-center gap-2 ml-6 mt-12">
-                            <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
-                            <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
-                        </div>
+                        <a href="index.html">
+                            <div class="flex items-center gap-2 ml-6 mt-12">
+                                    <img src="Images/logo.2.png" alt="Skillhatch Logo" class="h-8 w-8 object-contain">
+                                    <h1 class="font-['Inknut_Antiqua',serif] text-xl text-white">SKILLHATCH</h1>
+                            </div>
+                        </a>
                         <nav class="mt-16">
                             <a href="dashboard student.html" class="flex items-center px-6 py-3">
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Dashboard</button></a>
@@ -29,8 +31,6 @@
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Assessment</button></a>
                             <a href="profile.html" class="flex items-center px-6 py-3">
                                 <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Profile</button></a>
-                            <a href="settings.html" class="flex items-center px-6 py-3">
-                                <button class="w-full text-left px-4 py-2 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-300 transition-colors">Settings</button></a>
                         </nav>
                     </div>
                     <!-- logout -->
@@ -81,7 +81,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"> 
                 <!-- Course 1 -->
                     <div class="w-full leading-relaxed flex flex-col h-full min-h-[420px]">
-                        <a href="course detail.html">
+                        <a href="courseDetail.html">
         <!-- Image -->
                         <img src="Images/crs2.1.png" alt="Course 1" class="w-full h-48 object-cover rounded">
 
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         <div class="mt-4">
-                            <a href="course detail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</a>
+                            <a href="courseDetail.html" class="block w-full text-center py-2 bg-[#00418B] text-white rounded-lg">Click to Continue</a>
                         </div>
                         </a>
                     </div>
@@ -331,7 +331,7 @@
                 </div>
             </section>
             <div>
-                <a href="explore courses.html">
+                <a href="exploreCourses.html">
                     <button class="mt-4 w-full py-2 bg-[#00418B] text-white rounded-lg">Go to explore</button>
                 </a>
             </div>
@@ -349,7 +349,7 @@
                 buttons.forEach(btn=>{
                     btn.addEventListener('click', (e)=>{
                         const t = btn.dataset.target;
-                        // update visual state
+                        
                         clearActive();
                         btn.classList.remove('bg-white');
                         btn.classList.add('bg-blue-100','border-2','border-blue-400','z-30');
@@ -357,14 +357,13 @@
 
                         // Navigate when Explore is clicked
                         if(t === 'explore'){
-                            window.location.href = 'explore courses.html';
+                            window.location.href = 'exploreCourses.html';
                         }
-                        // If 'my' is clicked, stay on this page (or navigate to 'my courses.html' if desired)
-                        // else if(t === 'my') { window.location.href = 'my courses.html'; }
+                        
                     });
                 });
 
-                // set initial active to My courses on this page without triggering navigation
+                
                 const init = document.querySelector('.toggle-btn[data-target="my"]');
                 if(init){
                     // visually mark it active
